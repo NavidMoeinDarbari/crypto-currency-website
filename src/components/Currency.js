@@ -18,10 +18,10 @@ const Currency = (props) => {
                <p>$ {price}</p>
             </div>
             <div>
-               <p>{marketCap}</p>
+               <p>{marketCap.toLocaleString()}</p>
             </div>
             <div>
-               <p>{totalVolume}</p>
+               <p>{totalVolume.toLocaleString()}</p>
             </div>
             <div  className={priceChange24h > 1 ? styles.increased : styles.decreased}>
                <p>{priceChange24h} %</p>
