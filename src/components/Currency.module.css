@@ -1,0 +1,66 @@
+.currency {
+   width: 100%;
+   height: 40px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.091);  
+   display: grid;
+   grid-template-columns: 140px 170px 130px 150px repeat(2,140px);
+   gap: 1em;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+   position: relative;
+   padding: 30px 0;
+}
+.currency div {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+.currency div:not(:last-child) {
+   justify-content: left;
+   text-align: left;
+}
+p {
+   color: #E9E5FD;
+   font-family: 'Bahnschrift';
+   font-weight: 300;
+   letter-spacing: .1px;
+   text-align: left;
+}
+.currencyLogo {
+   display: flex; 
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1.2em;
+}
+.currencyLogo img {
+   width: 32px;
+}
+.symbol {
+   font-family: 'Bahnschrift';
+   color: #E9E5FD;
+   font-weight: 400;
+   font-size: 1rem;
+}
+
+.increased p , .decreased p{
+   display: flex;
+   width: 100%;
+   height: 35px;
+   text-align: left;
+   border-radius: 25px;
+   align-items: center;
+   justify-content: center;
+   font-weight: 400;
+}
+.increased p{
+   background-color: rgba(0, 255, 0, 0.138);
+   color: #63c858;
+}
+.decreased p{
+   background-color: rgba(255, 0, 0, 0.378);
+   color: #fd2727;
+}

@@ -1,0 +1,4 @@
+.app {
+   padding: 5em;
+   display: flex; justify-content: center; align-items: center;
+}
